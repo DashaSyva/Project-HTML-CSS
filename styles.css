@@ -26,6 +26,7 @@ body {
   margin: 0;
 }
 
+
 .container-header {
   display: flex;
   justify-content: space-between;
@@ -444,4 +445,43 @@ body {
   padding: 6px 12px;
   border: 1px solid #ccc;
   font-size: 14px;
+}
+
+
+.side-button-menu{
+  position: fixed;
+  top: 50%; 
+  transform: translateY(-50%); 
+  z-index: 999;
+  width: 48px; 
+  height: 48px;
+  display: block;
+  cursor: pointer;
+  right: 40px;
+}
+
+.side-button-setting{
+  position: fixed;
+  top: 50%; 
+  transform: translateY(-50%); 
+  z-index: 999;
+  width: 48px; 
+  height: 48px;
+  display: block;
+  cursor: pointer;
+  left: 40px;
+}
+
+
+.header.scrolled{
+  background-color: #fff;
+  color: #000;
+}
+
+.header.scrolled .logo img{
+  content: url('./Images/LOGO-BLACK.svg')
+}
+
+.header.scrolled a{
+  color: #000;
 }
